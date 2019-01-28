@@ -17,11 +17,14 @@
 PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/asus/X00T/proprietary/vendor/bin/nvram_btwifi:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_btwifi \
+    vendor/asus/X00T/proprietary/bin/perfservice:system/bin/perfservice \
     vendor/asus/X00T/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/asus/X00T/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/asus/X00T/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/asus/X00T/proprietary/etc/init/perfservice.rc:system/etc/init/perfservice.rc \
     vendor/asus/X00T/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/asus/X00T/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/asus/X00T/proprietary/etc/perf/whitelistedapps.xml:system/etc/perf/whitelistedapps.xml \
     vendor/asus/X00T/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/asus/X00T/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/X00T/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -62,6 +65,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/asus/X00T/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/asus/X00T/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
+    vendor/asus/X00T/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
+    vendor/asus/X00T/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
+    vendor/asus/X00T/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/asus/X00T/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/asus/X00T/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/asus/X00T/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/asus/X00T/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
@@ -81,6 +89,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/asus/X00T/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/asus/X00T/proprietary/lib/vendor.qti.hardware.factory@1.0.so:system/lib/vendor.qti.hardware.factory@1.0.so \
+    vendor/asus/X00T/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/asus/X00T/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/asus/X00T/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/asus/X00T/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/X00T/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -111,6 +121,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/asus/X00T/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/asus/X00T/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
+    vendor/asus/X00T/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
+    vendor/asus/X00T/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
+    vendor/asus/X00T/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/asus/X00T/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/asus/X00T/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/asus/X00T/proprietary/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so \
     vendor/asus/X00T/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/asus/X00T/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
@@ -129,6 +144,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.gnss@2.0.so:system/lib64/vendor.qti.gnss@2.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.gnss@2.1.so:system/lib64/vendor.qti.gnss@2.1.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:system/lib64/vendor.qti.hardware.factory@1.0.so \
+    vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/asus/X00T/proprietary/lib64/vendor.qti.hardware.soter@1.0.so:system/lib64/vendor.qti.hardware.soter@1.0.so \
@@ -1347,6 +1364,8 @@ PRODUCT_PACKAGES += \
     uceShimService \
     CNEService \
     WfdService \
+    QPerformance \
+    UxPerformance \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
