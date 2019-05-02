@@ -114,6 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00T/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/asus/X00T/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/asus/X00T/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
+    vendor/asus/X00T/proprietary/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so \
     vendor/asus/X00T/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/asus/X00T/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/asus/X00T/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
