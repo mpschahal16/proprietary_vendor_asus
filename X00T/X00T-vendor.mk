@@ -1354,6 +1354,8 @@ PRODUCT_PACKAGES += \
     QFingerprintService \
     TimeService \
     WfdCommon \
+    QPerformance \
+    UxPerformance \
     com.qti.snapdragon.sdk.display \
     com.qualcomm.location \
     qcrilhook \
